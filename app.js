@@ -86,6 +86,7 @@ function equal() {
         ans1 = special[i - 1] + special[i + 1];
         special.splice(i - 1, 3, ans1);
         ans1 = 0;
+        // console.log(special);
       }
     });
     special.forEach((item, i) => {
@@ -95,6 +96,10 @@ function equal() {
         ans1 = 0;
       }
     });
+    if (special.length != 1) {
+      eval();
+    }
+    console.log("eft");
     return Number(special.join(""));
   }
 }
